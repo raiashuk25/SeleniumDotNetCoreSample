@@ -1,0 +1,15 @@
+﻿{
+  "FrameworkSettings": {
+    "Browser": "Chrome",
+    "HtmlReport": true,
+    "LocalExecution": true,
+    "RemoteExecution": false,
+    "HubURL": "",
+    "TextReport": false,
+    "EmailRecepientList": "abcdefgh@xyz.com",
+    "DriverWait": 45,
+    "MaxWait": 90,
+    "WaitFrequency": 5,
+    "NumberOfRetrys": 5
+  }
+}

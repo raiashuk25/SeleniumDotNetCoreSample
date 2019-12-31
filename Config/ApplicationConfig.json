@@ -1,0 +1,17 @@
+﻿{
+  "FrameworkSettings": {
+    "Browser": "Chrome",
+    "HtmlReport": true,
+    "LocalExecution": true,
+    "RemoteExexution": false,
+    "TextReport": false,
+    "EmailRecepientList": "abcd@xyz.com",
+    "DriverWait": 45,
+    "MaxWait": 90,
+    "WaitFrequency": 5
+  },
+  "ApplicationSettings": {
+    "Environment": "QA",
+    "URL": "http://automationpractice.com/index.php"
+  }
+}
