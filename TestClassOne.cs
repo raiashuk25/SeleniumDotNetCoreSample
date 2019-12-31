@@ -22,13 +22,14 @@ namespace SeleniumDotNetCoreSample
 
         }
 
+        [Test]
         [Property("TestType", "Smoke")]
         [TestCaseSource(typeof(CSVDataHandler), "GetCSVData", new object[] { "DataFile1" })]
         public void VerifySearchTShirt(Dictionary<string, string> dataObject)
         {
             TestControl tc = new TestControl().GetTestResources(dataObject);
             tc.WebElementHelper.NavigateToURL(TestConfigurationBuilder.GetConfigurationValue("ApplicationSettings:URL"));
-            tc.WebElementHelper.SelectByText(searchField, Guid.NewGuid().ToString());
+            tc.WebElementHelper.SetText(searchField, Guid.NewGuid().ToString());
             tc.WebElementHelper.Click(seachButton);
             string messageAfterClickingSearch = tc.WebElementHelper.GetText(alertMessage);
             Assert.That(messageAfterClickingSearch, Does.Contain("No results were found for your search"));
