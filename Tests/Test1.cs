@@ -8,7 +8,7 @@ namespace SeleniumDotNetCoreSample
 {
     [TestFixture]
     [Parallelizable]
-    class TestClassOne :BaseTest
+    class Test1 :BaseTest
     {
         public By searchField = By.Id("search_query_top");
         public By seachButton = By.XPath("//button[@name='submit_search']");
